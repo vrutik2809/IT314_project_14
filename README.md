@@ -1,5 +1,7 @@
 [![All Contributors](https://img.shields.io/github/all-contributors/vrutik2809/IT314_project_14?color=blue)](#contributors)
 
+![GitHub issues](https://img.shields.io/github/issues/vrutik2809/IT314_project_14)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/vrutik2809/IT314_project_14)
 # IT314 Project
 
 # Restaurant Automation
