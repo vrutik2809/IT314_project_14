@@ -1,3 +1,6 @@
+import schemas from "../docs/schemas/index.js"
+import paths from "../docs/paths/index.js"
+
 export default {
     openapi: "3.0.0",
     info: {
@@ -36,11 +39,11 @@ export default {
             },
         },
         schemas: {
-           
+           ...schemas
         },
     },
     paths: {
-       
+       ...paths
     },
     apis: [ "./routes/*.js" ],
 }
