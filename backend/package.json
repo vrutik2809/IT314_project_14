@@ -1,0 +1,16 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Menulize backend",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev" : "nodemon index.js"
+  },
+  "engines": {
+    "node": ">=14 <15"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
