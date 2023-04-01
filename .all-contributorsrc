@@ -11,7 +11,10 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/74986666?v=4",
       "profile": "https://github.com/vrutik2809",
       "contributions": [
-        "projectManagement"
+        "projectManagement",
+        "code",
+        "infra",
+        "maintenance"
       ]
     }
   ],
