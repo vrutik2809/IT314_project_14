@@ -2,12 +2,16 @@
 
 ![GitHub issues](https://img.shields.io/github/issues/vrutik2809/IT314_project_14)
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/vrutik2809/IT314_project_14)
-# IT314 Project
+![GitHub Workflow Status (with branch)](https://img.shields.io/github/actions/workflow/status/vrutik2809/IT314_project_14/run_eslint_backend.yml?branch=master&label=Github%20Actions&logo=github)
 
-# Restaurant Automation
+# IT314: Software Engineering Project
+
+# Menulize: The Restaurant Automation System
 
 ## Contributors ✨
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+Here is the list of all the contributors.
+
+Please follow [emoji key](https://allcontributors.org/docs/en/emoji-key) for contributor's role:
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
@@ -25,4 +29,3 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification.
