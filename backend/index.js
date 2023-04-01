@@ -3,6 +3,7 @@ import dotenv from 'dotenv'
 import cors from 'cors'
 import morgan from 'morgan'
 import swaggerUi from 'swagger-ui-express'
+import mongoose from 'mongoose'
 
 import swaggerDocument from './config/swagger.js'
 
@@ -13,6 +14,16 @@ const app = express()
 app.use(morgan('dev'))
 app.use(express.json())
 app.use(express.urlencoded({ extended: true, }))
+
+mongoose.connect(process.env.DB_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    dbName: process.env.DB_NAME,
+}).then(() => {
+    console.log('Connected to database.')
+}).catch((err) => {
+    console.log(err)
+})
 
 app.use(cors()) // Allow all origins
 
