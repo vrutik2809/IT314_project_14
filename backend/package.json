@@ -5,7 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "format": "eslint --fix .",
+    "check": "eslint ."
   },
   "engines": {
     "node": ">=14 <15"
