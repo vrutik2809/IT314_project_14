@@ -16,7 +16,7 @@ export default {
         {
             url: "http://localhost:8080",
             description: "Development server",
-        },
+        }
     ],
     tags: [
         {
@@ -39,11 +39,11 @@ export default {
             },
         },
         schemas: {
-           ...schemas
+            ...schemas,
         },
     },
     paths: {
-       ...paths
+        ...paths,
     },
     apis: [ "./routes/*.js" ],
 }
