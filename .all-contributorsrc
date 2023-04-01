@@ -1,0 +1,21 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "vrutik2809",
+      "name": "Vrutik Prajapati",
+      "avatar_url": "https://avatars.githubusercontent.com/u/74986666?v=4",
+      "profile": "https://github.com/vrutik2809",
+      "contributions": [
+        "code",
+        "infra",
+        "maintenance",
+        "projectManagement"
+      ]
+    }
+  ]
+}
