@@ -30,7 +30,7 @@ app.use(cors()) // Allow all origins
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument))
 
 app.get('/', async (req, res) => {
-    res.status(200).json({ message: 'Menulize backend', })
+    res.status(200).json({ message: 'Menulize backend', });
 })
 
 // 404 route
