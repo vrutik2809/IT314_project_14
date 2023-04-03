@@ -1,0 +1,3 @@
+DB_URI = "mongodb+srv://vrutik:ERZfaYnd4FLA3hau@cluster0.zcnvelt.mongodb.net/?retryWrites=true&w=majority"
+DB_NAME = "menulize"
+JWT_SECRET = "it's a secret! don't share it with anyone"
