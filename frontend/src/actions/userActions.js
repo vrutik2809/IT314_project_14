@@ -4,6 +4,15 @@ import {
     USER_LOGIN_FAIL,
     USER_LOGIN_SUCCESS,
     USER_LOGOUT,
+    USER_LIST_REQUEST,
+    USER_LIST_SUCCESS,
+    USER_LIST_FAIL,
+    USER_REGISTER_REQUEST,
+    USER_REGISTER_SUCCESS,
+    USER_REGISTER_FAIL,
+    USER_DETAILS_REQUEST,
+    USER_DETAILS_SUCCESS,
+    USER_DETAILS_FAIL,
     USER_DETAILS_RESET,
 } from "./../constants/userConstants";
 
@@ -92,4 +101,81 @@ export const listUsers =
                         : error.message,
             });
         }
-    }; 
+    };
+
+//register an user
+export const register = (user) => async (dispatch, getState) => {
+    const { name, email, password, isAdmin } = user;
+
+    try {
+        dispatch({
+            type: USER_REGISTER_REQUEST,
+        });
+
+        //get user from state
+        const {
+            userLogin: { userInfo },
+        } = getState();
+
+        //headers
+        const config = {
+            headers: {
+                "Content-Type": "application/json",
+                Authorization: `Bearer ${userInfo.token}`,
+            },
+        };
+
+        //get login data
+        const { data } = await axios.post(
+            "/api/users",
+            { name, email, password, isAdmin },
+            config
+        );
+        dispatch({
+            type: USER_REGISTER_SUCCESS,
+            payload: data,
+        });
+    } catch (error) {
+        dispatch({
+            type: USER_REGISTER_FAIL,
+            payload:
+                error.response && error.response.data.message
+                    ? error.response.data.message
+                    : error.message,
+        });
+    }
+};
+
+//get user details
+export const listUserDetails = (id) => async (dispatch, getState) => {
+    try {
+        dispatch({ type: USER_DETAILS_REQUEST });
+
+        //get user from state
+        const {
+            userLogin: { userInfo },
+        } = getState();
+
+        //headers
+        const config = {
+            headers: {
+                Authorization: `Bearer ${userInfo.token}`,
+            },
+        };
+
+        //api call to get product
+        const { data } = await axios.get(`/api/users/${id}`, config);
+        dispatch({
+            type: USER_DETAILS_SUCCESS,
+            payload: data,
+        });
+    } catch (error) {
+        dispatch({
+            type: USER_DETAILS_FAIL,
+            payload:
+                error.response && error.response.data.message
+                    ? error.response.data.message
+                    : error.message,
+        });
+    }
+};
