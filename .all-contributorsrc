@@ -27,6 +27,16 @@
         "maintenance",
         "design"
       ]
+    },
+    {
+      "login": "hdt003",
+      "name": "Harshal Thakor",
+      "avatar_url": "https://avatars.githubusercontent.com/u/95112264?v=4",
+      "profile": "https://github.com/hdt003",
+      "contributions": [
+        "code",
+        "design"
+      ]
     }
   ],
   "contributorsPerLine": 7,

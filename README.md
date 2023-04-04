@@ -21,6 +21,7 @@ Please follow [emoji key](https://allcontributors.org/docs/en/emoji-key) for con
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/vrutik2809"><img src="https://avatars.githubusercontent.com/u/74986666?v=4?s=100" width="100px;" alt="Vrutik Prajapati"/><br /><sub><b>Vrutik Prajapati</b></sub></a><br /><a href="#projectManagement-vrutik2809" title="Project Management">📆</a> <a href="https://github.com/vrutik2809/IT314_project_14/commits?author=vrutik2809" title="Code">💻</a> <a href="#infra-vrutik2809" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#maintenance-vrutik2809" title="Maintenance">🚧</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/harshb0310"><img src="https://avatars.githubusercontent.com/u/77343146?v=4?s=100" width="100px;" alt="harshb0310"/><br /><sub><b>harshb0310</b></sub></a><br /><a href="https://github.com/vrutik2809/IT314_project_14/commits?author=harshb0310" title="Code">💻</a> <a href="#maintenance-harshb0310" title="Maintenance">🚧</a> <a href="#design-harshb0310" title="Design">🎨</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/hdt003"><img src="https://avatars.githubusercontent.com/u/95112264?v=4?s=100" width="100px;" alt="Harshal Thakor"/><br /><sub><b>Harshal Thakor</b></sub></a><br /><a href="https://github.com/vrutik2809/IT314_project_14/commits?author=hdt003" title="Code">💻</a> <a href="#design-hdt003" title="Design">🎨</a></td>
     </tr>
   </tbody>
 </table>
