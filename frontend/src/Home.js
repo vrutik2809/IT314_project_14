@@ -5,7 +5,8 @@ export default function Home() {
 
   const history = useHistory();
   const handleClick = () =>{
-      console.log("handleLogin")
+      history.push("/login")
+      // console.log("handleLogin")
   }
   return (
     <>
@@ -34,11 +35,9 @@ export default function Home() {
           <p>
             One stop solution for automating your restaurant with features like tracking orders, delieveries, and manage clients more efficiently
           </p>
-          <p>
           <h3 class="my-5">
           Please Login to Continue 
           </h3>
-          </p>
         </div>
       </div>
       <div className="col" style={{color:"white"}}>
