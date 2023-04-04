@@ -7,16 +7,17 @@ const LoginScreen = ({ history }) => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
-    const dispatch = useDispatch();
+    // const dispatch = useDispatch();
 
     //get user from state
     const userLogin = useSelector((state) => state.userLogin);
     const { userInfo, error, loading } = userLogin;
+    console.log(`User`)
 
     useEffect(() => {
         //if user is logged
         if (userInfo) {
-            console.log("user is logged")
+            console.log("user")
             console.log(userInfo)
         }
     }, [history, userInfo]);
