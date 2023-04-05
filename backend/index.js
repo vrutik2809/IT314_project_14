@@ -6,6 +6,8 @@ import swaggerUi from 'swagger-ui-express'
 import mongoose from 'mongoose'
 
 import swaggerDocument from './config/swagger.js'
+import authRoutes from './routes/auth.js'
+
 
 dotenv.config()
 
@@ -32,6 +34,8 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument))
 app.get('/', async (req, res) => {
     res.status(200).json({ message: 'Menulize backend', })
 })
+
+app.use('/api/auth', authRoutes)
 
 // 404 route
 app.use((req, res) => {
