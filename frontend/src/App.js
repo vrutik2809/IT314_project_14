@@ -10,8 +10,8 @@ const App = () => {
         <Router>
             <Switch>
                 <Route exact path="/" component={Home} />
-                <Route exact path="/dashboard" component={Main} />
                 <Route exact path="/login" component={LoginScreen} />
+                <Route exact path="/dashboard" component={Main} />
                 <Route path = "*" component={Error} />
             </Switch>
         </Router>
