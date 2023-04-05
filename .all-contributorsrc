@@ -16,6 +16,38 @@
         "infra",
         "maintenance"
       ]
+    },
+    {
+      "login": "harshb0310",
+      "name": "harshb0310",
+      "avatar_url": "https://avatars.githubusercontent.com/u/77343146?v=4",
+      "profile": "https://github.com/harshb0310",
+      "contributions": [
+        "code",
+        "maintenance",
+        "design"
+      ]
+    },
+    {
+      "login": "hdt003",
+      "name": "Harshal Thakor",
+      "avatar_url": "https://avatars.githubusercontent.com/u/95112264?v=4",
+      "profile": "https://github.com/hdt003",
+      "contributions": [
+        "code",
+        "design"
+      ]
+    },
+    {
+      "login": "Nishadh4014",
+      "name": "Nishadh4014",
+      "avatar_url": "https://avatars.githubusercontent.com/u/74643042?v=4",
+      "profile": "https://github.com/Nishadh4014",
+      "contributions": [
+        "code",
+        "ideas",
+        "design"
+      ]
     }
   ],
   "contributorsPerLine": 7,
