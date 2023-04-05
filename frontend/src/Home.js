@@ -25,8 +25,8 @@ export default function Home() {
         </form>
       </div>
     </nav>
-  <div className="row">
-      <div className="col">
+  <div className="row" >
+      <div className="col" style={{backgroundColor:'#73C2FB'}}>
         <div className="leftside" style={{height:"80vh", width:"70%", marginLeft:"80px", color:"white", marginTop:"150px", textAlign:"center"}}>
           <img src="./favicon.png" alt=""  style={{marginBottom:"20px", borderRadius:"50%", width:"30%"}}/>
           <h1>
