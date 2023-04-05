@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { login } from "../../actions/userActions";
 import Loader from "../../components/Loader";
 import Message from "../../components/Message";
 
@@ -7,7 +8,7 @@ const LoginScreen = ({ history }) => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
-    // const dispatch = useDispatch();
+    const dispatch = useDispatch();
 
     //get user from state
     const userLogin = useSelector((state) => state.userLogin);
@@ -17,14 +18,14 @@ const LoginScreen = ({ history }) => {
     useEffect(() => {
         //if user is logged
         if (userInfo) {
-            console.log("user")
+            history.push("/dashboard");
             console.log(userInfo)
         }
     }, [history, userInfo]);
 
     const submitHandler = (e) => {
         e.preventDefault();
-        console.log("handleSubmit")
+        dispatch(login(email, password));
     };
     const style = { background: "hsla(245, 35%, 51%, 1)",
 
