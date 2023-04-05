@@ -5,7 +5,7 @@ import Header from "./components/Header";
 import PrivateRoute from "./auth/PrivateRoute";
 import Menu from "./components/Menu";
 import DashboardScreen from "./screens/DashboardScreen";
-
+import Footer from "./components/Footer";
 
 export default function Main() {
     const dispatch = useDispatch();
@@ -21,6 +21,7 @@ export default function Main() {
                     <PrivateRoute exact path="/dashboard" component={DashboardScreen} />
                 </Switch>
             </div>
+            <Footer />
         </>
     );
 }
