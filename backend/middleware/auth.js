@@ -6,6 +6,7 @@ export const protect = async (req, res, next) => {
         let token
 
         if (req.headers.authorization && req.headers.authorization.startsWith("Bearer")) {
+            
             //[0] = Bearer , [1] = token
             token = req.headers.authorization.split(" ")[1]
 
