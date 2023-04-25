@@ -12,6 +12,7 @@ import CategoryScreen from "./screens/category/CategoryScreen";
 import CategoryEditScreen from "./screens/category/CategoryEditScreen";
 import TableScreen from "./screens/table/TableScreen";
 import TableEditScreen from "./screens/table/TableEditScreen";
+import ProductScreen from "./screens/product/ProductScreen";
 
 export default function Main() {
     const dispatch = useDispatch();
@@ -36,6 +37,8 @@ export default function Main() {
                         component={CategoryEditScreen}
                     />
                     <PrivateRoute exact path="/dashboard/category" component={CategoryScreen} />
+
+                    <PrivateRoute exact path="/dashboard/product" component={ProductScreen} />
 
                     <Route path="*" component={Error} />
                 </Switch>
