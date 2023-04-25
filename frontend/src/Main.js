@@ -29,6 +29,12 @@ export default function Main() {
                     />
                     <PrivateRoute exact path="/dashboard/table" component={TableScreen} />
 
+                    <PrivateRoute exact
+                        path="/dashboard/category/:id/edit"
+                        component={CategoryEditScreen}
+                    />
+                    <PrivateRoute exact path="/dashboard/category" component={CategoryScreen} />
+
                     <Route path="*" component={Error} />
                 </Switch>
             </div>
