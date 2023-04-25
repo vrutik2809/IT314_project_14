@@ -25,8 +25,8 @@ export default function Home() {
         </form>
       </div>
     </nav>
-  <div className="row">
-      <div className="col">
+  <div className="row mx-0" >
+      <div className="col px-0" style={{backgroundColor:'#73C2FB'}}>
         <div className="leftside" style={{height:"80vh", width:"70%", marginLeft:"80px", color:"white", marginTop:"150px", textAlign:"center"}}>
           <img src="./favicon.png" alt=""  style={{marginBottom:"20px", borderRadius:"50%", width:"30%"}}/>
           <h1>
@@ -40,7 +40,7 @@ export default function Home() {
           </h3>
         </div>
       </div>
-      <div className="col" style={{color:"white"}}>
+      <div className="col px-0">
         <div className="rightside" style={{height:"100%", width:"100%", backgroundColor:"#cceff5"}}>
           <img src="https://media.licdn.com/dms/image/C4E12AQEbNwDr1TGebg/article-cover_image-shrink_600_2000/0/1652095275578?e=2147483647&v=beta&t=tgDbmyD3YBd4plLVUCpRvF-4sDjHM-m6Sa5s1lxisls" alt=""  style={{marginTop:"110px"}} />
         </div>

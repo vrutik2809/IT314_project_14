@@ -37,6 +37,66 @@
         "code",
         "design"
       ]
+    },
+    {
+      "login": "Nishadh4014",
+      "name": "Nishadh4014",
+      "avatar_url": "https://avatars.githubusercontent.com/u/74643042?v=4",
+      "profile": "https://github.com/Nishadh4014",
+      "contributions": [
+        "code",
+        "ideas",
+        "design"
+      ]
+    },
+    {
+      "login": "Shreyansh-Khemesara",
+      "name": "Shreyansh Khemesara",
+      "avatar_url": "https://avatars.githubusercontent.com/u/77277744?v=4",
+      "profile": "https://github.com/Shreyansh-Khemesara",
+      "contributions": [
+        "code",
+        "ideas"
+      ]
+    },
+    {
+      "login": "pulkit87",
+      "name": "pulkit87",
+      "avatar_url": "https://avatars.githubusercontent.com/u/124185429?v=4",
+      "profile": "https://github.com/pulkit87",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "krunal-78",
+      "name": "krunal-78",
+      "avatar_url": "https://avatars.githubusercontent.com/u/77279344?v=4",
+      "profile": "https://github.com/krunal-78",
+      "contributions": [
+        "code",
+        "ideas",
+        "data"
+      ]
+    },
+    {
+      "login": "MrAchiever",
+      "name": "Soham Mandaviya",
+      "avatar_url": "https://avatars.githubusercontent.com/u/101919439?v=4",
+      "profile": "https://www.linkedin.com/in/soham-mandaviya-05a0b3223/",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "DhruvBar",
+      "name": "Dhruv Baraiya",
+      "avatar_url": "https://avatars.githubusercontent.com/u/124247747?v=4",
+      "profile": "https://github.com/DhruvBar",
+      "contributions": [
+        "doc",
+        "test"
+      ]
     }
   ],
   "contributorsPerLine": 7,

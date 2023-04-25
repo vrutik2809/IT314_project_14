@@ -22,7 +22,8 @@
         }],
         "object-curly-spacing": ["error", "always"],
         "array-bracket-spacing": ["error", "always"],
-        "no-unused-vars": "off"
+        "no-unused-vars": "off",
+        "no-undef": "off"
     },
     "ignorePatterns": [
         "node_modules/**"
