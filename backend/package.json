@@ -7,7 +7,9 @@
   "scripts": {
     "dev": "nodemon index.js",
     "format": "eslint --fix .",
-    "check": "eslint ."
+    "check": "eslint .",
+    "test": "jest",
+    "test-coverage": "jest --coverage"
   },
   "engines": {
     "node": ">=14 <15"
