@@ -8,6 +8,8 @@ import Menu from "./components/Menu";
 import DashboardScreen from "./screens/DashboardScreen";
 import Footer from "./components/Footer";
 
+import CategoryScreen from "./screens/category/CategoryScreen";
+import CategoryEditScreen from "./screens/category/CategoryEditScreen";
 import TableScreen from "./screens/table/TableScreen";
 import TableEditScreen from "./screens/table/TableEditScreen";
 
