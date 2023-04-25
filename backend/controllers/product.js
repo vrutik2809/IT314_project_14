@@ -76,3 +76,30 @@ export const getProduct = async (req, res) => {
         return res.status(500).json({ message: 'Internal server error', })
     }
 }
+
+export const updateProduct = async (req, res) => {
+    try {
+        const { categoryId, ...restBody } = req.body
+        const body = {
+            category_id: categoryId,
+            ...restBody,
+        }
+        const category = await Category.findById(body.category_id)
+        if (!category) {
+            return res.status(404).json({ message: 'Category not found', })
+        }
+        let product = await Product.findByIdAndUpdate(req.params.id, body, { new: true, })
+        if (!product) {
+            return res.status(404).json({ message: 'Product not found', })
+        }
+        const { _id, ...rest } = product._doc
+        product = {
+            id: _id,
+            ...rest,
+        }
+        return res.status(200).json(product)
+    } catch (error) {
+        console.log(error)
+        return res.status(500).json({ message: 'Internal server error', })
+    }
+}
