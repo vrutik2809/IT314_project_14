@@ -1,21 +1,5 @@
-import express from 'express'
-import dotenv from 'dotenv'
-import cors from 'cors'
-import morgan from 'morgan'
-import swaggerUi from 'swagger-ui-express'
-import mongoose from 'mongoose'
-
-import swaggerDocument from './config/swagger.js'
-import authRoutes from './routes/auth.js'
-
-
-dotenv.config()
-
-const app = express()
-
-app.use(morgan('dev'))
-app.use(express.json())
-app.use(express.urlencoded({ extended: true, }))
+import mongoose from "mongoose"
+import app from "./app.js"
 
 mongoose.connect(process.env.DB_URI, {
     useNewUrlParser: true,
@@ -25,22 +9,6 @@ mongoose.connect(process.env.DB_URI, {
     console.log('Connected to database.')
 }).catch((err) => {
     console.log(err)
-})
-
-app.use(cors()) // Allow all origins
-
-app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument))
-
-app.get('/', async (req, res) => {
-    res.status(200).json({ message: 'Menulize backend', })
-})
-
-app.use('/api/auth', authRoutes)
-
-// 404 route
-app.use((req, res) => {
-    
-    res.status(404).json({ message: 'Not Found', })
 })
 
 const PORT = process.env.PORT || 8080

@@ -1,0 +1,35 @@
+import express from 'express'
+import dotenv from 'dotenv'
+import cors from 'cors'
+import morgan from 'morgan'
+import swaggerUi from 'swagger-ui-express'
+
+import swaggerDocument from './config/swagger.js'
+import authRoutes from './routes/auth.js'
+
+dotenv.config()
+
+const app = express()
+
+app.use(morgan('dev'))
+app.use(express.json())
+app.use(express.urlencoded({ extended: true, }))
+
+app.use(cors({
+    origin: '*', // Allow all origins
+}))
+
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument))
+
+app.get('/', async (req, res) => {
+    res.status(200).json({ message: 'Menulize backend', })
+})
+
+app.use('/api/auth', authRoutes)
+
+// 404 route
+app.use((req, res) => {
+    res.status(404).json({ message: 'Not Found', })
+})
+
+export default app
