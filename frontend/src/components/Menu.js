@@ -17,7 +17,7 @@ const Menu = ({ history }) => {
     }, [dispatch, userInfo]);
 
     return (
-        <aside className="main-sidebar sidebar-dark-primary elevation-4" style={{backgroundImage: 'linear-gradient(to top, #5f72bd 0%, #9b23ea 100%)'}}>
+        <aside className="main-sidebar sidebar-dark-primary elevation-4" style={{backgroundColor:'#1C4E80'}}>
             {/* Brand Logo */}
             <Link to={"/dashboard"} className="brand-link">
                 <img
