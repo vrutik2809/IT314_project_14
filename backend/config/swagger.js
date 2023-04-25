@@ -18,7 +18,7 @@ export default {
             description: "Development server",
         },
         {
-            url: "https://menulize-dummy.onrender.com",
+            url: "https://menulize-backend.onrender.com",
             description: "Production server",
         }
     ],
