@@ -29,3 +29,28 @@ export const getAllProducts = async (req, res) => {
         return res.status(500).json({ message: 'Internal server error', })
     }
 }
+
+export const createProduct = async (req, res) => {
+    try {
+        const { categoryId, ...restBody } = req.body
+        const body = {
+            category_id: categoryId,
+            ...restBody,
+        }
+        
+        const category = await Category.findById(body.category_id)
+        if (!category) {
+            return res.status(404).json({ message: 'Category not found', })
+        }
+        let product = await Product.create(body)
+        const { _id, ...rest } = product._doc
+        product = {
+            id: _id,
+            ...rest,
+        }
+        return res.status(201).json(product)
+    } catch (error) {
+        console.log(error)
+        return res.status(500).json({ message: 'Internal server error', })
+    }
+}
