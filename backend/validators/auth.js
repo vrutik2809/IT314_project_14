@@ -5,4 +5,5 @@ export const bodySchema = joi.object({
     password: joi.string().required(),
 }).options({
     abortEarly: false, 
+    allowUnknown: true, // allow unknown keys that will be ignored
 })
