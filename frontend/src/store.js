@@ -20,6 +20,13 @@ import {
     categoryUpdateReducer,
 } from "./reducers/categoryReducers";
 
+import {
+    productListReducer,
+    productCreateReducer,
+    productDetailsReducer,
+    productUpdateReducer,
+} from "./reducers/productReducers";
+
 const reducer = combineReducers({
     userLogin: userLoginReducer,
 
@@ -33,6 +40,11 @@ const reducer = combineReducers({
     categoryCreate: categoryCreateReducer,
     categoryDetails: categoryDetailsReducer,
     categoryUpdate: categoryUpdateReducer,
+
+    productList: productListReducer,
+    productCreate: productCreateReducer,
+    productDetails: productDetailsReducer,
+    productUpdate: productUpdateReducer,
 });
 
 const userInfoFromStorage = localStorage.getItem("userInfo")
