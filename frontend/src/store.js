@@ -5,9 +5,23 @@ import {
     userLoginReducer,
 } from "./reducers/userReducers";
 
+import {
+    tableAllReducer,
+    tableListReducer,
+    tableCreateReducer,
+    tableDetailsReducer,
+    tableUpdateReducer,
+} from "./reducers/tableReducers";
 
 const reducer = combineReducers({
     userLogin: userLoginReducer,
+
+    tableAll: tableAllReducer,
+    tableList: tableListReducer,
+    tableCreate: tableCreateReducer,
+    tableDetails: tableDetailsReducer,
+    tableUpdate: tableUpdateReducer,
+
 });
 
 const userInfoFromStorage = localStorage.getItem("userInfo")
