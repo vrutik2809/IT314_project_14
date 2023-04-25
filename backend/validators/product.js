@@ -8,3 +8,16 @@ const validateMongoID = (value, helper) => {
         return helper.message('Invalid id')
     }
 }
+
+export const bodySchema = joi.object({
+    name: joi.string().required(),
+    price: joi.number().required(),
+    categoryId: joi.string().required().custom(validateMongoID),
+    stock: joi.number().integer().required(),
+}).options({
+    abortEarly: false, 
+})
+
+export const paramSchema = joi.object({
+    id: joi.string().required().custom(validateMongoID),
+})
