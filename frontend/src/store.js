@@ -13,6 +13,13 @@ import {
     tableUpdateReducer,
 } from "./reducers/tableReducers";
 
+import {
+    categoryListReducer,
+    categoryCreateReducer,
+    categoryDetailsReducer,
+    categoryUpdateReducer,
+} from "./reducers/categoryReducers";
+
 const reducer = combineReducers({
     userLogin: userLoginReducer,
 
@@ -22,6 +29,10 @@ const reducer = combineReducers({
     tableDetails: tableDetailsReducer,
     tableUpdate: tableUpdateReducer,
 
+    categoryList: categoryListReducer,
+    categoryCreate: categoryCreateReducer,
+    categoryDetails: categoryDetailsReducer,
+    categoryUpdate: categoryUpdateReducer,
 });
 
 const userInfoFromStorage = localStorage.getItem("userInfo")
