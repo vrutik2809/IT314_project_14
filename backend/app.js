@@ -32,7 +32,6 @@ app.use('/api/categories', categoryRoutes)
 app.use('/api/tables', tableRoutes) //
 
 
-
 // 404 route
 app.use((req, res) => {
     res.status(404).json({ message: 'Not Found', })
