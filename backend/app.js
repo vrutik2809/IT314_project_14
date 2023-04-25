@@ -8,7 +8,7 @@ import swaggerDocument from './config/swagger.js'
 import authRoutes from './routes/auth.js'
 import categoryRoutes from './routes/category.js'
 import productRoutes from './routes/product.js'
-import tableRoutes from './routes/table.js' //
+import tableRoutes from './routes/table.js'
 
 
 dotenv.config()
@@ -23,7 +23,7 @@ app.use(cors({
     origin: '*', // Allow all origins
 }))
 
-app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument))
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument,{ swaggerOptions: { displayRequestDuration: true, }, }))
 
 app.get('/', async (req, res) => {
     res.status(200).json({ message: 'Menulize backend', })
@@ -32,7 +32,7 @@ app.get('/', async (req, res) => {
 app.use('/api/auth', authRoutes)
 app.use('/api/categories', categoryRoutes)
 app.use('/api/products', productRoutes)
-app.use('/api/tables', tableRoutes) //
+app.use('/api/tables', tableRoutes)
 
 
 // 404 route
