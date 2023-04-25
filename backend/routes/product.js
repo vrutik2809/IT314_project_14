@@ -16,3 +16,5 @@ router.get('/:id', [ protect, validation(product.paramSchema, 'params') ], contr
 router.put('/:id', [ protect, validation(product.paramSchema, 'params'), validation(product.bodySchema) ], controller.updateProduct)
 
 router.delete('/:id', [ protect, validation(product.paramSchema, 'params') ], controller.deleteProduct)
+
+export default router
