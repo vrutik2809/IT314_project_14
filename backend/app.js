@@ -8,6 +8,8 @@ import swaggerDocument from './config/swagger.js'
 import authRoutes from './routes/auth.js'
 import categoryRoutes from './routes/category.js'
 import productRoutes from './routes/product.js'
+import tableRoutes from './routes/table.js' //
+
 
 dotenv.config()
 
@@ -30,6 +32,9 @@ app.get('/', async (req, res) => {
 app.use('/api/auth', authRoutes)
 app.use('/api/categories', categoryRoutes)
 app.use('/api/products', productRoutes)
+app.use('/api/tables', tableRoutes) //
+
+
 // 404 route
 app.use((req, res) => {
     res.status(404).json({ message: 'Not Found', })
