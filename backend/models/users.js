@@ -12,6 +12,10 @@ const UserSchema = new Schema({
         type: Types.Boolean,
         default: false,
     },
+    image:{
+        type: Types.String,
+        default: "/avatar.png",
+    },
     created_at: {
         type: Types.Date,
         default: Date.now(),
@@ -23,6 +27,7 @@ const UserSchema = new Schema({
 })
 
 UserSchema.pre("save", function (next) {
+    if (!this.isModified("password")) return next()
     const salt = bcrypt.genSaltSync(10)
     this.password = bcrypt.hashSync(this.password, salt)
     next()
