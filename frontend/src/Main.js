@@ -2,7 +2,7 @@ import React from 'react';
 import { useDispatch, useSelector } from "react-redux";
 import { Switch, Route } from "react-router-dom";
 import Header from "./components/Header";
-import Error from "./Error"
+import ErrorDashboard from "./ErrorDashboard"
 import PrivateRoute from "./auth/PrivateRoute";
 import Menu from "./components/Menu";
 import DashboardScreen from "./screens/DashboardScreen";
@@ -13,6 +13,7 @@ import CategoryEditScreen from "./screens/category/CategoryEditScreen";
 import TableScreen from "./screens/table/TableScreen";
 import TableEditScreen from "./screens/table/TableEditScreen";
 import ProductScreen from "./screens/product/ProductScreen";
+import ProductEditScreen from "./screens/product/ProductEditScreen";
 
 export default function Main() {
     const dispatch = useDispatch();
@@ -38,9 +39,13 @@ export default function Main() {
                     />
                     <PrivateRoute exact path="/dashboard/category" component={CategoryScreen} />
 
+                    <PrivateRoute exact
+                        path="/dashboard/product/:id/edit"
+                        component={ProductEditScreen}
+                    />
                     <PrivateRoute exact path="/dashboard/product" component={ProductScreen} />
 
-                    <Route path="*" component={Error} />
+                    <Route path="*" component={ErrorDashboard} />
                 </Switch>
             </div>
             <Footer />
