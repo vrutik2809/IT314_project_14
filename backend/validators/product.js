@@ -11,9 +11,9 @@ const validateMongoID = (value, helper) => {
 
 export const bodySchema = joi.object({
     name: joi.string().required(),
-    price: joi.number().required(),
+    price: joi.number().min(1).required(),
     categoryId: joi.string().required().custom(validateMongoID),
-    stock: joi.number().integer().required(),
+    stock: joi.number().min(1).integer().required(),
 }).options({
     abortEarly: false, 
 })

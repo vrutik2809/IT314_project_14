@@ -147,6 +147,7 @@ const ProductScreen = ({ history }) => {
                         name={"price"}
                         type={"number"}
                         data={price}
+                        min={1}
                         setData={setPrice}
                         errors={errors}
                     />
@@ -154,6 +155,7 @@ const ProductScreen = ({ history }) => {
                         name={"stock"}
                         type={"number"}
                         data={stock}
+                        min={1}
                         setData={setStock}
                         errors={errors}
                     />
