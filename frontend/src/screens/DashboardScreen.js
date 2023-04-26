@@ -238,6 +238,47 @@ const renderSales = () => (
   </div>
 );
 
+const renderOrders = () => (
+  <table className="table m-0 table-hover">
+      <thead>
+          <tr>
+              <th>Order Number</th>
+              <th>Table</th>
+              <th>Total</th>
+          </tr>
+      </thead>
+      <tbody>
+          {ordersInPlace(orders)
+              .splice(0, 5)
+              .map((order,idx) => (
+                  <tr
+                      key={order.id}
+                      onClick={(e) => handleRowClick(e, order.id)}
+                      style={{
+                          cursor: "pointer",
+                      }}
+                  >
+                      <td>
+                          <h4>
+                              <span className={"badge bg-primary"}>
+                                  {`Order: ${idx+1}`}
+                              </span>
+                          </h4>
+                      </td>
+                      <td>{order.table ? order.table.name : ""}</td>
+                      <td>
+                          <h4>
+                              <span className={"badge bg-success"}>
+                                  ₹{order.total}
+                              </span>
+                          </h4>
+                      </td>
+                  </tr>
+              ))}
+      </tbody>
+  </table>
+);
+
 
 
   return (
@@ -254,7 +295,7 @@ const renderSales = () => (
                           render={renderSmallBoxes}
                       />
                   </div>
-                  
+
                   {userInfo.is_admin && (
                       <LoaderHandler
                           loading={loading}
@@ -279,6 +320,17 @@ const renderSales = () => (
                                       >
                                           <i className="fas fa-minus" />
                                       </button>
+                                  </div>
+                              </div>
+                              
+                              <div className="card-body p-0">
+                                  <div className="table-responsive">
+                                      <LoaderHandler
+                                          loading={loading}
+                                          error={error}
+                                          loader={<DataTableLoader />}
+                                          render={renderOrders}
+                                      />
                                   </div>
                               </div>
                               
