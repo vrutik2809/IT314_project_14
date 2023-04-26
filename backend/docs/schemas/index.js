@@ -3,6 +3,7 @@ import responsesSchema from './responses.js'
 import categorySchema from './category.js'
 import tableSchema from './table.js'
 import productSchema from './product.js'
+import orderSchema from './order.js'
 
 export default {
     ...authSchema,
@@ -10,4 +11,5 @@ export default {
     ...categorySchema,
     ...tableSchema,
     ...productSchema,
+    ...orderSchema,
 }
