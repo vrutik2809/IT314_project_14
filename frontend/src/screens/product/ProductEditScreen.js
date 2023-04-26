@@ -27,8 +27,8 @@ const ProductEditScreen = ({ history, match }) => {
     const productId = match.params.id;
 
     const [name, setName] = useState("");
-    const [price, setPrice] = useState(0);
-    const [stock, setStock] = useState(0);
+    const [price, setPrice] = useState(1);
+    const [stock, setStock] = useState(1);
     const [category, setCategory] = useState("");
 
     const [errors, setErrors] = useState({});
@@ -147,6 +147,7 @@ const ProductEditScreen = ({ history, match }) => {
                 name={"price"}
                 type={"number"}
                 data={price}
+                min={1}
                 setData={setPrice}
                 errors={errors}
             />
@@ -155,6 +156,7 @@ const ProductEditScreen = ({ history, match }) => {
                 name={"stock"}
                 type={"number"}
                 data={stock}
+                min={1}
                 setData={setStock}
                 errors={errors}
             />
