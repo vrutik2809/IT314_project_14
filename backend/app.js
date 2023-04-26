@@ -10,6 +10,7 @@ import categoryRoutes from './routes/category.js'
 import productRoutes from './routes/product.js'
 import tableRoutes from './routes/table.js'
 import orderRoutes from './routes/order.js'
+import userRoutes from './routes/users.js'
 
 
 dotenv.config()
@@ -35,6 +36,7 @@ app.use('/api/categories', categoryRoutes)
 app.use('/api/products', productRoutes)
 app.use('/api/tables', tableRoutes)
 app.use("/api/orders", orderRoutes)
+app.use('/api/users', userRoutes)
 
 
 // 404 route
