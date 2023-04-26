@@ -4,11 +4,6 @@ export default {
             tags: [ "User" ],
             summary: "Create a new user",
             description: "Create a new user",
-            security: [
-                {
-                    Bearer: [],
-                }
-            ],
             requestBody: {
                 content: {
                     "application/json": {
