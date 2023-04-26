@@ -19,6 +19,7 @@ import OrderCreateScreen from "./screens/order/OrderCreateScreen";
 import OrderViewScreen from "./screens/order/OrderViewScreen ";
 import OrderEditScreen from "./screens/order/OrderEditScreen";
 import ActiveOrdersScreen from "./screens/order/ActiveOrdersScreen";
+import DeliveryScreen from "./screens/order/DeliveryScreen";
 
 export default function Main() {
     const dispatch = useDispatch();
@@ -43,6 +44,9 @@ export default function Main() {
                         component={CategoryEditScreen}
                     />
                     <PrivateRoute exact path="/dashboard/category" component={CategoryScreen} />
+
+                    <PrivateRoute exact path="/dashboard/delivery" component={DeliveryScreen} />
+                    <PrivateRoute exact path="/dashboard/order/create/delivery" component={OrderCreateScreen} />
 
                     <PrivateRoute exact
                         path="/dashboard/product/:id/edit"
