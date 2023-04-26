@@ -279,14 +279,15 @@ const renderOrders = () => (
   </table>
 );
 
-const renderDeliveries = () =>ordersForDelivery(orders).splice(0, 5).map((order,idx) => (
+const renderDeliveries = () =>ordersForDelivery(orders).splice(0, 5).map((order,idx) => {
+    return (
         <DeliveryListItem
-            id={idx+1}
+            id={order.id}
             name={`Customer  ${idx+1}`}
             address={`Customer ${idx+1} address`}
             key={order.id}
         />
-));
+)});
 
 
   return (

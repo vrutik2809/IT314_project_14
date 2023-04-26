@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const DeliveryListItem = ({id, name, address}) => {
     return (
         <li className="item">
-            <Link to={`/order/${id}/view`}>
+            <Link to={`/dashboard/order/${id}/view`}>
                 <div className="product-img">
                     <h1 ><i className="fas fa-truck"  /></h1>
                 </div>
