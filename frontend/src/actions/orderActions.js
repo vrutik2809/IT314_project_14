@@ -196,7 +196,6 @@ export const updateOrder = (order) => async (dispatch, getState) => {
 
         //update order
         order.total = parseFloat(order.total)
-        // order.tableId = String(order.tableId)
         order.products = order.products.map((product) => {
             return {
                 id: product.id,
@@ -244,7 +243,6 @@ export const updateOrderToPaid = (order) => async (dispatch, getState) => {
             },
         };
         //update order
-        // order.table_id = order.table.id;
         const { data } = await axios.post(
             `/api/orders/${order.id}/pay`,
             order,
