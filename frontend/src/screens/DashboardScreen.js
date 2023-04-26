@@ -141,6 +141,104 @@ const DashboardScreen = ({ history }) => {
     </>
 );
 
+const renderSales = () => (
+  <div className="row">
+      <div className="col-12 col-lg-6">
+          <div className="card">
+              <div className="card-header border-0">
+                  <h3 className="card-title">Last Sales</h3>
+                  <div className="card-tools">
+                      <Link to="/dashboard/order" className="btn btn-tool btn-sm">
+                          <i className="nav-icon far fa-clipboard" />
+                      </Link>
+                  </div>
+              </div>
+              <div className="card-body table-responsive p-0">
+                  <table className="table table-striped table-valign-middle text-center">
+                      <thead>
+                          <tr>
+                              <th>SN</th>
+                              <th>Type</th>
+                              <th>Total</th>
+                              <th>Products</th>
+                              <th>More</th>
+                          </tr>
+                      </thead>
+                      <tbody>{returnSales(sales)}</tbody>
+                  </table>
+              </div>
+          </div>
+      </div>
+      <div className="col-12 col-lg-6">
+          <div className="card">
+              <div className="card-header border-0">
+                  <h3 className="card-title">Menulize Overview</h3>
+              </div>
+              <div className="card-body">
+                  <div className="d-flex justify-content-between align-items-center border-bottom mb-3">
+                      <p className="text-warning text-xl">
+                          <i className="fas fa-shopping-cart"></i>
+                      </p>
+                      <p className="d-flex flex-column text-right">
+                          <span className="font-weight-bold">
+                              <i className="ion ion-android-arrow-up text-warning" />{" "}
+                              {statistics && statistics.orders}
+                          </span>
+                          <span className="text-muted">
+                              TOTAL ORDERS COMPLETED
+                          </span>
+                      </p>
+                  </div>
+                  {/* /.d-flex */}
+                  <div className="d-flex justify-content-between align-items-center border-bottom mb-3">
+                      <p className="text-info text-xl">
+                          <i className="fas fa-truck"></i>
+                      </p>
+                      <p className="d-flex flex-column text-right">
+                          <span className="font-weight-bold">
+                              <i className="ion ion-android-arrow-up text-info" />{" "}
+                              {statistics && statistics.deliveries}
+                          </span>
+                          <span className="text-muted">
+                              TOTAL DELIVERIES COMPLETED
+                          </span>
+                      </p>
+                  </div>
+                  <div className="d-flex justify-content-between align-items-center border-bottom mb-3">
+                      <p className="text-success text-xl">
+                          <i className="fas fa-money-bill-wave"></i>
+                      </p>
+                      <p className="d-flex flex-column text-right">
+                          <span className="font-weight-bold">
+                              <span className="text-success">
+                                  <i className="fas fa-rupee-sign text-success"></i>{" "}
+                                  {statistics && statistics.today}
+                              </span>
+                          </span>
+                          <span className="text-muted">TODAY SALES</span>
+                      </p>
+                  </div>
+                  <div className="d-flex justify-content-between align-items-center mb-0">
+                      <p className="text-danger text-xl">
+                          <i className="fas fa-piggy-bank"></i>
+                      </p>
+                      <p className="d-flex flex-column text-right">
+                          <span className="font-weight-bold">
+                              <span className="text-success">
+                                  <i className="fas fa-rupee-sign"></i>{" "}
+                                  {statistics && statistics.total}
+                              </span>
+                          </span>
+                          <span className="text-muted">TOTAL SALES</span>
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+);
+
+
 
   return (
       <>
@@ -156,7 +254,15 @@ const DashboardScreen = ({ history }) => {
                           render={renderSmallBoxes}
                       />
                   </div>
-
+                  
+                  {userInfo.is_admin && (
+                      <LoaderHandler
+                          loading={loading}
+                          error={error}
+                          loader={<SkeletonSales />}
+                          render={renderSales}
+                      />
+                  )}
 
                   <div className="row">
                       <div className="col-12 col-md-9">
