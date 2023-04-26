@@ -27,11 +27,7 @@ const LoginScreen = ({ history }) => {
         e.preventDefault();
         dispatch(login(email, password));
     };
-    const style = { background: "hsla(245, 35%, 51%, 1)",
-
-    background: "linear-gradient(90deg, hsla(245, 35%, 51%, 1) 0%, hsla(204, 78%, 58%, 1) 100%)",
-    
-    background: "-moz-linear-gradient(90deg, hsla(245, 35%, 51%, 1) 0%, hsla(204, 78%, 58%, 1) 100%)",
+    const style = { 
     
     background: "-webkit-linear-gradient(90deg, hsla(245, 35%, 51%, 1) 0%, hsla(204, 78%, 58%, 1) 100%)",
     

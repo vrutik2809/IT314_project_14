@@ -18,8 +18,7 @@ const Menu = ({ history }) => {
 
     return (
         <aside className="main-sidebar sidebar-dark-primary elevation-4" style={{backgroundColor:'#1C4E80'}}>
-            {/* Brand Logo */}
-            <Link to={"/dashboard"} className="brand-link">
+               <Link to={"/dashboard"} className="brand-link">
                 <img
                     src="/logo512.png"
                     alt="Menulize Logo"
@@ -28,9 +27,7 @@ const Menu = ({ history }) => {
                 />
                 <span className="brand-text font-weight-light" style={{fontFamily: "Gabriola", fontSize:"40px"}}>Menulize</span>
             </Link>
-            {/* Sidebar */}
             <div className="sidebar">
-                {/* Sidebar user panel (optional) */}
                 <div className="user-panel mt-3 pb-3 mb-3 d-flex">
                     <div className="image">
                         <img
@@ -45,7 +42,7 @@ const Menu = ({ history }) => {
                         </Link>
                     </div>
                 </div>
-                {/* Sidebar Menu */}
+
                 <nav className="mt-2">
                     <ul
                         className="nav nav-pills nav-sidebar flex-column"

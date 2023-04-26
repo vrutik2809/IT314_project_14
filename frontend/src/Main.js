@@ -8,6 +8,7 @@ import Menu from "./components/Menu";
 import DashboardScreen from "./screens/DashboardScreen";
 import Footer from "./components/Footer";
 
+import ProfileScreen from "./screens/ProfileScreen";
 import CategoryScreen from "./screens/category/CategoryScreen";
 import CategoryEditScreen from "./screens/category/CategoryEditScreen";
 import TableScreen from "./screens/table/TableScreen";
@@ -33,6 +34,8 @@ export default function Main() {
             <div className="content-wrapper">
                 <Switch>
                     <PrivateRoute exact path="/dashboard" component={DashboardScreen} />
+                    <PrivateRoute exact path="/dashboard/profile" component={ProfileScreen} />
+
                     <PrivateRoute exact
                         path="/dashboard/table/:id/edit"
                         component={TableEditScreen}

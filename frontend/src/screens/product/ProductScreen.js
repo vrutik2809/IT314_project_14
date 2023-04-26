@@ -11,7 +11,7 @@ import DataTableLoader from "../../components/loader/DataTableLoader";
 import Select from "../../components/Select";
 
 /* Actions */
-import { listProducts, createProduct, deleteProduct } from "../../actions/productActions";
+import { listProducts, createProduct } from "../../actions/productActions";
 import { listCategories } from "../../actions/categoryActions";
 
 /* Styles */
