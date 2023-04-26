@@ -279,6 +279,14 @@ const renderOrders = () => (
   </table>
 );
 
+const renderDeliveries = () =>ordersForDelivery(orders).splice(0, 5).map((order,idx) => (
+        <DeliveryListItem
+            id={idx+1}
+            name={`Customer  ${idx+1}`}
+            address={`Customer ${idx+1} address`}
+            key={order.id}
+        />
+));
 
 
   return (
@@ -333,7 +341,7 @@ const renderOrders = () => (
                                       />
                                   </div>
                               </div>
-                              
+
                               <div className="card-footer clearfix">
                                   <Link
                                       to={"/dashboard/order/create"}
@@ -366,7 +374,18 @@ const renderOrders = () => (
                                       </button>
                                   </div>
                               </div>
-                             
+
+                              <div className="card-body p-0">
+                                  <ul className="products-list product-list-in-card pl-2 pr-2">
+                                      <LoaderHandler
+                                          loading={loading}
+                                          loader={<DataTableLoader />}
+                                          error={error}
+                                          render={renderDeliveries}
+                                      />
+                                  </ul>
+                              </div>
+                              
                               <div className="card-footer text-center">
                                   <Link
                                       to={"/dashboard/delivery"}
