@@ -1,7 +1,7 @@
 import React from "react";
 import { capitalize } from "../../utils/functions";
 
-const Input = ({ name, type, data, setData, errors, classes = "" }) => {
+const Input = ({ name, type, data, setData, errors,min = 0, classes = "" }) => {
     return (
         <div className="form-group">
             <label htmlFor={name}>{capitalize(name)}</label>
@@ -11,6 +11,7 @@ const Input = ({ name, type, data, setData, errors, classes = "" }) => {
                 id={name}
                 aria-describedby={name}
                 value={data}
+                min={min}
                 onChange={(e) => setData(e.target.value)}
             />
 
