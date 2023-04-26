@@ -3,6 +3,7 @@ import categoryPaths from './category.js'
 import tablePaths from './table.js'
 import productPaths from './product.js'
 import orderPaths from './order.js'
+import userPaths from './users.js'
 
 export default {
     ...authPaths,
@@ -10,4 +11,5 @@ export default {
     ...tablePaths,
     ...productPaths,
     ...orderPaths,
+    ...userPaths,
 }

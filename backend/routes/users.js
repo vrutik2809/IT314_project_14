@@ -11,4 +11,6 @@ router.put('/profile/:id', [ protect ], controller.updateUser)
 
 router.get('/:id', [ protect ], controller.getUser)
 
+router.delete('/:id', [ protect, admin ], controller.deleteUser)
+
 export default router
