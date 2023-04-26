@@ -4,6 +4,7 @@ import categorySchema from './category.js'
 import tableSchema from './table.js'
 import productSchema from './product.js'
 import orderSchema from './order.js'
+import userSchema from './users.js'
 
 export default {
     ...authSchema,
@@ -12,4 +13,5 @@ export default {
     ...tableSchema,
     ...productSchema,
     ...orderSchema,
+    ...userSchema,
 }
