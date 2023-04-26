@@ -293,10 +293,8 @@ const OrderViewScreen = ({ history, match }) => {
 
     return (
         <>
-            {/* Content Header (Page header) */}
             <HeaderContent name={"Orders"} />
             <LoaderHandler loading={loadingUpdate} error={errorUpdate} />
-            {/* Main content */}
             <section className="content">
                 <div className="container-fluid">
                     <div className="row">
@@ -308,7 +306,6 @@ const OrderViewScreen = ({ history, match }) => {
                                 <div className="card-header">
                                     <h3 className="card-title">View Order</h3>
                                 </div>
-                                {/* /.card-header */}
                                 <div className="card-body">
                                     <div className="row d-flex justify-content-center">
                                         <LoaderHandler
@@ -319,12 +316,9 @@ const OrderViewScreen = ({ history, match }) => {
                                         />
                                     </div>
                                 </div>
-                                {/* /.card-body */}
                             </div>
                         </div>
-                        {/* /.col */}
                     </div>
-                    {/* /.row */}
                     <div className="row d-flex justify-content-between">
                         <LoaderHandler
                             loading={loading}
@@ -340,7 +334,6 @@ const OrderViewScreen = ({ history, match }) => {
                         />
                     </div>
                 </div>
-                {/* /.container-fluid */}
             </section>
         </>
     );
