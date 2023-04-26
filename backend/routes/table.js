@@ -11,7 +11,6 @@ router.get('/', [ protect ], controller.getAllTables)
 
 router.post('/', [ protect, validation(table.bodySchema) ], controller.createTable)
 
-// TODO - add GET /all route
 router.get('/all', [ protect ], controller.getTables)
 
 router.get('/:id', [ protect, validation(table.paramSchema, 'params') ], controller.getTable)
