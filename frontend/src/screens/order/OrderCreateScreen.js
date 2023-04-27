@@ -143,6 +143,7 @@ const OrderCreateScreen = ({ history, match }) => {
                 data={table}
                 setData={setTable}
                 items={filterFreeTables(tables)}
+                placeholder="Select Table"
                 disabled={delivery}
                 search={searchTables}
             />
