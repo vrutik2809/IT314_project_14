@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ReactSelect from "react-select";
 
-const Select = ({ items, data, setData, disabled, search = () => {} }) => {
+const Select = ({ name, items, data, setData, disabled, search = () => {} }) => {
     const [current, setCurrent] = useState(null);
     
     useEffect(() => {
@@ -26,7 +26,10 @@ const Select = ({ items, data, setData, disabled, search = () => {} }) => {
     };
 
     return (
+        <div>
+        <label for={name}>{name}</label>
         <ReactSelect
+            id={name}   
             options={mapSelect()}
             onChange={handleChange}
             value={current}
@@ -35,7 +38,8 @@ const Select = ({ items, data, setData, disabled, search = () => {} }) => {
             placeholder="Select value"
             isDisabled={disabled}
             isSearchable
-        />
+            />
+        </div>
     );
 };
 
