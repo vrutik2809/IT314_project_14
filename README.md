@@ -29,7 +29,7 @@ Please follow [emoji key](https://allcontributors.org/docs/en/emoji-key) for con
     </tr>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://www.linkedin.com/in/soham-mandaviya-05a0b3223/"><img src="https://avatars.githubusercontent.com/u/101919439?v=4?s=100" width="100px;" alt="Soham Mandaviya"/><br /><sub><b>Soham Mandaviya</b></sub></a><br /><a href="https://github.com/vrutik2809/IT314_project_14/commits?author=MrAchiever" title="Documentation">📖</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/DhruvBar"><img src="https://avatars.githubusercontent.com/u/124247747?v=4?s=100" width="100px;" alt="Dhruv Baraiya"/><br /><sub><b>Dhruv Baraiya</b></sub></a><br /><a href="https://github.com/vrutik2809/IT314_project_14/commits?author=DhruvBar" title="Documentation">📖</a> <a href="https://github.com/vrutik2809/IT314_project_14/commits?author=DhruvBar" title="Tests">⚠️</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/DhruvBar"><img src="https://avatars.githubusercontent.com/u/124247747?v=4?s=100" width="100px;" alt="Dhruv Baraiya"/><br /><sub><b>Dhruv Baraiya</b></sub></a><br /><a href="https://github.com/vrutik2809/IT314_project_14/commits?author=DhruvBar" title="Documentation">📖</a></td>
     </tr>
   </tbody>
 </table>
