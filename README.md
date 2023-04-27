@@ -28,7 +28,7 @@ Please follow [emoji key](https://allcontributors.org/docs/en/emoji-key) for con
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/krunal-78"><img src="https://avatars.githubusercontent.com/u/77279344?v=4?s=100" width="100px;" alt="krunal-78"/><br /><sub><b>krunal-78</b></sub></a><br /><a href="https://github.com/vrutik2809/IT314_project_14/commits?author=krunal-78" title="Code">💻</a> <a href="#ideas-krunal-78" title="Ideas, Planning, & Feedback">🤔</a> <a href="#data-krunal-78" title="Data">🔣</a></td>
     </tr>
     <tr>
-      <td align="center" valign="top" width="14.28%"><a href="https://www.linkedin.com/in/soham-mandaviya-05a0b3223/"><img src="https://avatars.githubusercontent.com/u/101919439?v=4?s=100" width="100px;" alt="Soham Mandaviya"/><br /><sub><b>Soham Mandaviya</b></sub></a><br /></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://www.linkedin.com/in/soham-mandaviya-05a0b3223/"><img src="https://avatars.githubusercontent.com/u/101919439?v=4?s=100" width="100px;" alt="Soham Mandaviya"/><br /><sub><b>Soham Mandaviya</b></sub></a><br /><a href="https://github.com/vrutik2809/IT314_project_14/commits?author=MrAchiever" title="Documentation">📖</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/DhruvBar"><img src="https://avatars.githubusercontent.com/u/124247747?v=4?s=100" width="100px;" alt="Dhruv Baraiya"/><br /><sub><b>Dhruv Baraiya</b></sub></a><br /><a href="https://github.com/vrutik2809/IT314_project_14/commits?author=DhruvBar" title="Documentation">📖</a> <a href="https://github.com/vrutik2809/IT314_project_14/commits?author=DhruvBar" title="Tests">⚠️</a></td>
     </tr>
   </tbody>
