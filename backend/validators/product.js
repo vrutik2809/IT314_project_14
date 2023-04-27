@@ -7,6 +7,8 @@ const validateMongoID = (value, helper) => {
     if(!isValidMongoId(value)){
         return helper.message('Invalid id')
     }
+
+    return value
 }
 
 export const bodySchema = joi.object({

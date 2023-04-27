@@ -15,5 +15,6 @@ export const paramSchema = joi.object({
         if(!isValidMongoId(value)){
             return helper.message('Invalid id')
         }
+        return value
     }),
 })
