@@ -14,7 +14,8 @@
         "projectManagement",
         "code",
         "infra",
-        "maintenance"
+        "maintenance",
+        "test"
       ]
     },
     {
