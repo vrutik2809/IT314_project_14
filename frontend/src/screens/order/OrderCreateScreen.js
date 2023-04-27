@@ -139,9 +139,11 @@ const OrderCreateScreen = ({ history, match }) => {
     const renderTablesSelect = () => (
         <>
             <Select
+                name="Select Table"
                 data={table}
                 setData={setTable}
                 items={filterFreeTables(tables)}
+                placeholder="Select Table"
                 disabled={delivery}
                 search={searchTables}
             />

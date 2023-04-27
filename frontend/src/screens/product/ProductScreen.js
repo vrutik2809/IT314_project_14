@@ -114,7 +114,9 @@ const ProductScreen = ({ history }) => {
             }
         })
         return <Select
+            name='Select category'
             data={category}
+            placeholder="Select category"
             setData={setCategory}
             items={mappedCategories}
             search={searchCategories}

@@ -293,7 +293,7 @@ const OrderViewScreen = ({ history, match }) => {
 
     return (
         <>
-            <HeaderContent name={"Orders"} />
+            <HeaderContent name={"Order"} />
             <LoaderHandler loading={loadingUpdate} error={errorUpdate} />
             <section className="content">
                 <div className="container-fluid">

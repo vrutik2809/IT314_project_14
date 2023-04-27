@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ReactSelect from "react-select";
 
-const Select = ({ items, data, setData, disabled, search = () => {} }) => {
+const Select = ({ name, items, data, setData, disabled,placeholder = "select value", search = () => {} }) => {
     const [current, setCurrent] = useState(null);
     
     useEffect(() => {
@@ -26,16 +26,20 @@ const Select = ({ items, data, setData, disabled, search = () => {} }) => {
     };
 
     return (
+        <div>
+        <label for={name}>{name}</label>
         <ReactSelect
+            id={name}   
             options={mapSelect()}
             onChange={handleChange}
             value={current}
             onKeyDown={search}
             onFocus={search}
-            placeholder="Select value"
+            placeholder={placeholder}
             isDisabled={disabled}
             isSearchable
-        />
+            />
+        </div>
     );
 };
 
