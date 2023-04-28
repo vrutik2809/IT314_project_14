@@ -1,7 +1,7 @@
 export default {
     create_product: {
         type: "object",
-        required: [ "name" ,"price","category_id","stock" ],
+        required: [ "name" ,"price","categoryId","stock" ],
         properties: {
             name: {
                 type: "string",
