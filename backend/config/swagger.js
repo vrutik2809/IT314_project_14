@@ -28,6 +28,22 @@ export default {
             description: "API to manage authentication",
         },
         {
+            name: "Category",
+            description: "API to manage category routes",
+        },
+        {
+            name: "Product",
+            description: "API to manage product routes",
+        },
+        {
+            name: "Table",
+            description: "API to manage table routes",
+        },
+        {
+            name: "Order",
+            description: "API to manage order routes",
+        },
+        {
             name: "User",
             description: "API to manage user routes",
         }
